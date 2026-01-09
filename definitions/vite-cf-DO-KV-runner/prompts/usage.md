@@ -39,7 +39,7 @@ Workers + React with Durable Objects (DO) + KV. Type-safe APIs with mock fallbac
 
 ### Backend Structure
 - `worker/index.ts` - Worker entrypoint (registers routes; do not change patterns)
-- `worker/userRoutes.ts` - Add routes here
+- `worker/user-routes.ts` - Add routes here
 - `worker/durableObject.ts` - DO methods (e.g., counter)
 - `worker/core-utils.ts` - Core types/utilities (do not modify)
 
@@ -51,7 +51,7 @@ Workers + React with Durable Objects (DO) + KV. Type-safe APIs with mock fallbac
 ## API Patterns
 
 ### Adding Endpoints
-Follow this pattern in `worker/userRoutes.ts`:
+Follow this pattern in `worker/user-routes.ts`:
 ```typescript
 // KV endpoint with mock fallback
 app.get('/api/my-data', async (c) => {

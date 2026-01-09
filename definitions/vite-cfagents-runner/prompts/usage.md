@@ -2,7 +2,7 @@
 
 You can start customizing the template frontend by modifying `src/pages/HomePage.tsx`. The page auto-updates as you edit the file.
 
-The chat API is powered by Cloudflare Agents (Which is a wrapper on Durable Objects) and accessible through the worker at `/api/chat/:sessionId/*` routes defined in `worker/userRoutes.ts`. **Use it!**
+The chat API is powered by Cloudflare Agents (Which is a wrapper on Durable Objects) and accessible through the worker at `/api/chat/:sessionId/*` routes defined in `worker/user-routes.ts`. **Use it!**
 
 The agent system uses Durable Objects for persistent state management and conversation history. `/api/chat/:sessionId/*` should be used without modifications for any conversation support. There is also a control plane durable object for session management name AppController.
 
@@ -68,7 +68,7 @@ There are already several models presupplied with the template along with proper
 
 - Worker Architecture (Backend, APIs):
   * **`worker/agent.ts`**: Main agent class 
-  * **`worker/userRoutes.ts`**: HTTP routing for agent API and session managementå
+  * **`worker/user-routes.ts`**: HTTP routing for agent API and session managementå
   * **`worker/chat.ts`**: OpenAI integration and conversation logic  
   * **`worker/mcp-client.ts`**: MCP client for real server integration
   * **`worker/tools.ts`**: Tool routing and MCP server coordination

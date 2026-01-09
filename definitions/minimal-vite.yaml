@@ -50,7 +50,7 @@ excludes:
   - "src/hooks/**"
   - "src/lib/**"
   - "src/App.css"
-  - "worker/userRoutes.ts"
+  - "worker/user-routes.ts"
   - "worker/core-utils.ts"
   - "components.json"
   - "public/vite.svg"

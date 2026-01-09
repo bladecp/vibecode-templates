@@ -1,4 +1,4 @@
-// Making changes to this file is **STRICTLY** forbidden. Please add your routes in `userRoutes.ts` file.
+// Making changes to this file is **STRICTLY** forbidden. Please add your routes in `user-routes.ts` file.
 
 import { Hono } from "hono";
 import { cors } from "hono/cors";

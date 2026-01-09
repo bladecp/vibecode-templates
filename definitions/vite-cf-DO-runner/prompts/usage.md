@@ -38,7 +38,7 @@ Cloudflare Workers + React. Single global Durable Object (DO) for all persistenc
 
 ### Backend Structure
 - `worker/index.ts` - Worker entrypoint (registers routes; do not change patterns)
-- `worker/userRoutes.ts` - Add routes here
+- `worker/user-routes.ts` - Add routes here
 - `worker/durableObject.ts` - DO methods (e.g., counter, demo items)
 - `worker/core-utils.ts` - Core types/utilities (do not modify)
 
@@ -49,7 +49,7 @@ Cloudflare Workers + React. Single global Durable Object (DO) for all persistenc
 ## API Patterns
 
 ### Adding Endpoints
-Follow this pattern in `worker/userRoutes.ts`:
+Follow this pattern in `worker/user-routes.ts`:
 ```typescript
 // Durable Object endpoint for data retrieval
 app.get('/api/my-data', async (c) => {
